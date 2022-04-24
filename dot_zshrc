@@ -94,6 +94,13 @@ function man() {
     man "$@"
 }
 
+# Get public IP
+function publicip() {
+  dig +short myip.opendns.com @resolver1.opendns.com
+}
+
+
+
 # Key bindings
 bindkey "^[[H" beginning-of-line
 bindkey "^[[F" end-of-line
