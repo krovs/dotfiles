@@ -63,7 +63,8 @@ alias k=kubectl
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# Functions
+########################################################### Functions
+# Creates folders
 function mkt(){
 	mkdir {nmap,content,exploits,scripts}
 }
