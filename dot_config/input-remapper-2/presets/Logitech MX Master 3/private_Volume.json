@@ -33,7 +33,7 @@
                 "analog_threshold": -1
             }
         ],
-        "target_uinput": "gamepad",
+        "target_uinput": "keyboard",
         "output_symbol": "XF86AudioRaiseVolume",
         "mapping_type": "key_macro"
     }
