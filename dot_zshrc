@@ -59,6 +59,7 @@ alias ls='lsd --group-dirs=first'
 alias cat='bat'
 alias vi=vim
 alias k=kubectl
+alias dockver='docker run -it --rm dockver bash'
 
 # Plugins
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
