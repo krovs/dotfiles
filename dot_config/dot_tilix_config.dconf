@@ -1,21 +1,21 @@
 [/]
-warn-vte-config-issue=false
+prompt-on-close=true
+window-style='normal'
 
 [profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d]
 background-color='#1E1E2E'
-background-transparency-percent=2
+background-transparency-percent=5
 badge-color-set=false
 bold-color-set=false
 cursor-background-color='#F5E0DC'
 cursor-colors-set=true
 cursor-foreground-color='#1E1E2E'
-font='Hack Nerd Font 12'
+font='Hack Nerd Font Mono 12'
 foreground-color='#CDD6F4'
 highlight-background-color='#F5E0DC'
 highlight-colors-set=true
 highlight-foreground-color='#1E1E2E'
 palette=['#BAC2DE', '#F38BA8', '#A6E3A1', '#F9E2AF', '#89B4FA', '#F5C2E7', '#94E2D5', '#585B70', '#A6ADC8', '#F38BA8', '#A6E3A1', '#F9E2AF', '#89B4FA', '#F5C2E7', '#94E2D5', '#45475A']
-scrollback-unlimited=true
 use-system-font=false
 use-theme-colors=false
 visible-name='Default'
