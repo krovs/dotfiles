@@ -62,8 +62,9 @@ alias ports='sudo lsof -i -P -n | grep LISTEN'
 # 🧠 Plugins
 # -------------------------------------------------------------------
 # Syntax highlighting & autosuggestions
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=8'
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Note: load these AFTER compinit and BEFORE Starship
 
