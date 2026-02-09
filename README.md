@@ -24,4 +24,4 @@ environment-specific config.
 ### Environments
 
 - fedora: desktop and device configs (GNOME, autostart, input-remapper, xbindkeys)
-- cachyos: terminal configs only (kitty, tilix schemes)
+- cachyos: niri, fish and kitty
