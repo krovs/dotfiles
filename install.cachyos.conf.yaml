@@ -2,6 +2,7 @@
     link:
       create: true
       relink: true
+      force: true
 
 - link:
     ~/.config/kitty: .config/kitty
@@ -9,5 +10,4 @@
     ~/.config/niri/custom.kdl: .config/niri/custom.kdl
 
 - shell:
-    - description: Add custom.kdl include to niri config
-      command: grep -qF 'include "./custom.kdl"' ~/.config/niri/config.kdl 2>/dev/null || echo 'include "./custom.kdl"' >> ~/.config/niri/config.kdl
+    - command: [grep -qF 'include "./custom.kdl"' ~/.config/niri/config.kdl 2>/dev/null || echo 'include "./custom.kdl"' >> ~/.config/niri/config.kdl]
