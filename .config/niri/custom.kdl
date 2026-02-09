@@ -1,0 +1,13 @@
+window-rule {
+	focus-ring {
+		active-color "#cf83d7ff"
+		width 1.5
+	}
+	geometry-corner-radius 6
+}
+
+binds {
+	Mod+K			hotkey-overlay-title="Open Terminal: Kitty" { spawn "kitty";}
+    Mod+Space       hotkey-overlay-title="Open App Launcher: noctalia launcher" { spawn-sh "qs -c noctalia-shell ipc call launcher  toggle"; }
+
+}

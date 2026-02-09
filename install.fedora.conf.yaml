@@ -1,0 +1,17 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- link:
+    ~/.config/kitty: .config/kitty
+    ~/.config/tilix/schemes: .config/tilix/schemes
+    ~/.xbindkeysrc: .xbindkeysrc
+    ~/.config/autostart: .config/autostart
+    ~/.config/input-remapper-2: .config/input-remapper-2
+    ~/.config/gnome-shell-extensions-settings.dconf: .config/gnome-shell-extensions-settings.dconf
+    ~/.config/wm-keybindings.dconf: .config/wm-keybindings.dconf
+    ~/.config/tilix_config.dconf: .config/dot_tilix_config.dconf
+    ~/.zshrc: .zshrc
+    ~/.p10k.zsh: .p10k.zsh
+    ~/.config/starship.toml: .config/starship.toml

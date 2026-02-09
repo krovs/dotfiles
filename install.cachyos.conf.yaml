@@ -1,0 +1,13 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- link:
+    ~/.config/kitty: .config/kitty
+    ~/.config/fish/conf.d: .config/fish/conf.d
+    ~/.config/niri/custom.kdl: .config/niri/custom.kdl
+
+- shell:
+    - description: Add custom.kdl include to niri config
+      command: grep -qF 'include "./custom.kdl"' ~/.config/niri/config.kdl 2>/dev/null || echo 'include "./custom.kdl"' >> ~/.config/niri/config.kdl
