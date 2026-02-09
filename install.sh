@@ -11,17 +11,12 @@ case "$ENV_NAME" in
 esac
 
 BASE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-DOTBOT_DIR="$BASE_DIR/dotbot"
-DOTBOT_BIN="$DOTBOT_DIR/bin/dotbot"
+DOTBOT_DIR="dotbot"
+DOTBOT_BIN="bin/dotbot"
 
-if [ ! -x "$DOTBOT_BIN" ]; then
-  echo "Dotbot not found. Bootstrapping..."
-  if [ -d "$DOTBOT_DIR/.git" ]; then
-    git -C "$DOTBOT_DIR" pull --ff-only
-  else
-    git clone https://github.com/anishathalye/dotbot.git "$DOTBOT_DIR"
-  fi
-fi
+cd "$BASE_DIR"
+git -C "$DOTBOT_DIR" submodule sync --quiet --recursive
+git submodule update --init --recursive "$DOTBOT_DIR"
 
 configs=("install.conf.yaml")
 if [ "$ENV_NAME" = "cachyos" ]; then
@@ -31,5 +26,5 @@ else
 fi
 
 for config in "${configs[@]}"; do
-  "$DOTBOT_BIN" -d "$BASE_DIR" -c "$config"
+  "$BASE_DIR/$DOTBOT_DIR/$DOTBOT_BIN" -d "$BASE_DIR" -c "$config"
 done
