@@ -1,7 +1,12 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-ENV_NAME="${1:-cachyos}"
+if [ $# -eq 0 ]; then
+  echo "Usage: $0 [cachyos|fedora]"
+  exit 1
+fi
+
+ENV_NAME="$1"
 case "$ENV_NAME" in
   cachyos|fedora) ;;
   *)
