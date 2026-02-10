@@ -1,3 +1,1 @@
-if status is-interactive
-    starship init fish | source
-end
+starship init fish | source
