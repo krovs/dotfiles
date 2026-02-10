@@ -1,6 +1,6 @@
 window-rule {
 	focus-ring {
-		active-color "#cf83d7ff"
+		active-color "rgb(179, 131, 215)"
 		width 1.5
 	}
 	geometry-corner-radius 6
