@@ -3,6 +3,9 @@
       create: true
       relink: true
 
+- create:
+    - ~/.config/kitty
+
 - link:
     ~/.config/kitty: .config/kitty
     ~/.config/tilix/schemes: .config/tilix/schemes

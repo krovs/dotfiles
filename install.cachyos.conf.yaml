@@ -4,6 +4,9 @@
       relink: true
       force: true
 
+- create:
+    - ~/.config/kitty
+
 - link:
     ~/.config/kitty: .config/kitty
     ~/.config/fish/conf.d: .config/fish/conf.d
