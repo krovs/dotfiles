@@ -11,6 +11,7 @@
     ~/.config/kitty: .config/kitty
     ~/.config/fish/conf.d: .config/fish/conf.d
     ~/.config/niri/custom.kdl: .config/niri/custom.kdl
+    ~/.config/starship.toml: .config/starship.toml
 
 - shell:
     - description: Add custom.kdl include to niri config
