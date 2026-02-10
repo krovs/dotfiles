@@ -12,3 +12,5 @@
 - shell:
     - description: Add custom.kdl include to niri config
       command: grep -qF 'include "./custom.kdl"' ~/.config/niri/config.kdl 2>/dev/null || echo 'include "./custom.kdl"' >> ~/.config/niri/config.kdl
+    - description: Setup starship catppuccin-powerline preset
+      command: starship preset catppuccin-powerline -o ~/.config/starship.toml
