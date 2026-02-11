@@ -7,7 +7,6 @@ window-rule {
 }
 
 binds {
-	Mod+K			hotkey-overlay-title="Open Terminal: Kitty" { spawn "kitty";}
+	Mod+Return			hotkey-overlay-title="Open Terminal: Kitty" { spawn "kitty";}
     Mod+Space       hotkey-overlay-title="Open App Launcher: noctalia launcher" { spawn-sh "qs -c noctalia-shell ipc call launcher  toggle"; }
-
 }
