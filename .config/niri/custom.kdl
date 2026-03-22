@@ -7,7 +7,18 @@ window-rule {
 }
 
 binds {
-	Mod+Return		hotkey-overlay-title="Open Terminal: Kitty" { spawn "kitty"; }
-    Mod+Space       hotkey-overlay-title="Open App Launcher: noctalia launcher" { spawn-sh "qs -c noctalia-shell ipc call launcher  toggle"; }
-	Mod+B 			hotkey-overlay-title="Open Browser: Brave" { spawn "brave"; }
+	Mod+Return	hotkey-overlay-title="Open Terminal: Kitty" { spawn "kitty"; }
+        Mod+Space       hotkey-overlay-title="Open App Launcher: noctalia launcher" { spawn-sh "qs -c noctalia-shell ipc call launcher  toggle"; }
+	Mod+B 		hotkey-overlay-title="Open Browser: Brave" { spawn "brave"; }
+        // Merge the column to the right into the current column (Stacking)
+        Mod+Comma  { consume-window-into-column; }
+
+        // Kick the current window out of the column into its own column (Unstacking)
+        Mod+Period { expel-window-from-column; }
+
+        // "Smart" merge/split:
+        // If window is in a stack, it pops it out. 
+        // If it's alone, it pulls the neighbor in.
+        Mod+Shift+Left  { consume-or-expel-window-left; }
+        Mod+Shift+Right { consume-or-expel-window-right; }
 }
