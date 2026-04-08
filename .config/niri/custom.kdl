@@ -22,3 +22,11 @@ binds {
         Mod+Shift+Left  { consume-or-expel-window-left; }
         Mod+Shift+Right { consume-or-expel-window-right; }
 }
+input {
+	keyboard {
+	    xkb{
+		layout "us,es"
+	    }
+	    numlock
+        }
+}
