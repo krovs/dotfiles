@@ -1,2 +1,2 @@
-alias k=kubectl
-alias vi=vim
+abbr -a  k kubectl
+abbr -a  vi vim
