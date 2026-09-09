@@ -8,13 +8,13 @@
 
 ## Setup
 
-### Requisitos
+### Requirements
 
-- CachyOS con Niri y Fish ya inicializados, de modo que existan
-  `~/.config/niri/config.kdl` y `~/.config/fish/config.fish`.
+- CachyOS with Niri and Fish already initialized, so that
+  `~/.config/niri/config.kdl` and `~/.config/fish/config.fish` exist.
 - `git`, `jq`, `niri`, `foot`, `kitty`, `fish`, `starship`, `pfetch`,
-  `noctalia-shell`, `noctalia-qs`, `brave-bin` y `ttf-hack-nerd`.
-- Abre Noctalia al menos una vez antes de instalar para que cree
+  `noctalia-shell`, `noctalia-qs`, `brave-bin`, and `ttf-hack-nerd`.
+- Start Noctalia at least once before installing so that it creates
   `~/.config/noctalia/settings.json`.
 
 Run the CachyOS installer:
