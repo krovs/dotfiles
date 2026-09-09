@@ -6,8 +6,15 @@ window-rule {
 	geometry-corner-radius 6
 }
 
+// Foot is translucent. Draw Niri's focus ring around it rather than behind it,
+// otherwise the active focus color tints the whole terminal background.
+window-rule {
+	match app-id=r#"^foot$"#
+	draw-border-with-background false
+}
+
 binds {
-	Mod+Return	hotkey-overlay-title="Open Terminal: Kitty" { spawn "kitty"; }
+	Mod+Return	hotkey-overlay-title="Open Terminal: Foot" { spawn "foot"; }
         Mod+Space       hotkey-overlay-title="Open App Launcher: noctalia launcher" { spawn-sh "qs -c noctalia-shell ipc call launcher  toggle"; }
 	Mod+B 		hotkey-overlay-title="Open Browser: Brave" { spawn "brave"; }
         // Merge the column to the right into the current column (Stacking)

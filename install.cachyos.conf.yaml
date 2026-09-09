@@ -6,9 +6,11 @@
 
 - create:
     - ~/.config/kitty
+    - ~/.config/foot
 
 - link:
     ~/.config/kitty: .config/kitty
+    ~/.config/foot/foot.ini: .config/foot/foot.ini
     ~/.config/fish/conf.d: .config/fish/conf.d
     ~/.config/niri/custom.kdl: .config/niri/custom.kdl
     ~/.config/starship.toml: .config/starship.toml
@@ -18,5 +20,3 @@
       command: grep -qF 'include "./custom.kdl"' ~/.config/niri/config.kdl 2>/dev/null || echo 'include "./custom.kdl"' >> ~/.config/niri/config.kdl
     - description: Enable fish_greeting with pfetch
       command: sed -i '/#function fish_greeting/,/#end/c\function fish_greeting\n    pfetch\nend' ~/.config/fish/config.fish
-    # - description: Setup starship catppuccin-powerline preset
-    #   command: starship preset catppuccin-powerline -o ~/.config/starship.toml

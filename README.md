@@ -8,20 +8,11 @@
 
 ## Setup
 
-Run the installer for the target environment:
+Run the CachyOS installer:
 
 ```bash
-bash install.sh cachyos
+bash install.sh
 ```
 
-```bash
-bash install.sh fedora
-```
-
-The script bootstraps dotbot if needed and then applies the base config plus the
-environment-specific config.
-
-### Environments
-
-- fedora: desktop and device configs (GNOME, autostart, input-remapper, xbindkeys)
-- cachyos: niri, fish and kitty
+The script initializes Dotbot when needed and installs the Niri, Fish, Foot,
+Kitty and Starship configuration.
