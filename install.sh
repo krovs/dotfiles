@@ -2,7 +2,7 @@
 set -euo pipefail
 
 if [ $# -ne 0 ]; then
-  echo "Usage: $0"
+  echo "Usage: $0" >&2
   exit 1
 fi
 
