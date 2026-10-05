@@ -18,6 +18,10 @@
     ~/.config/starship.toml: .config/starship.toml
 
 - shell:
+    - description: Apply pfetch greeting after the CachyOS Fish configuration
+      command: grep -qFx 'source ~/.config/fish/conf.d/greeting.fish' ~/.config/fish/config.fish || printf '\nsource ~/.config/fish/conf.d/greeting.fish\n' >> ~/.config/fish/config.fish
+    - description: Apply Starship after the CachyOS Fish configuration
+      command: grep -qFx 'source ~/.config/fish/conf.d/starship.fish' ~/.config/fish/config.fish || printf '\nsource ~/.config/fish/conf.d/starship.fish\n' >> ~/.config/fish/config.fish
     - description: Add custom.kdl include to niri config
       command: grep -qF 'include "./custom.kdl"' ~/.config/niri/config.kdl 2>/dev/null || echo 'include "./custom.kdl"' >> ~/.config/niri/config.kdl
     - description: Validate Niri configuration

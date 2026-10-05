@@ -24,7 +24,9 @@ bash install.sh
 
 The script initializes Dotbot when needed and links the Niri, Noctalia, Fish,
 Foot, Kitty and Starship configuration. It adds the Niri `custom.kdl` include,
-sets Foot as the default terminal, and validates Niri and Noctalia.
+sets Foot as the default terminal, and validates Niri and Noctalia. It loads
+the pfetch greeting and Starship at the end of Fish initialization so that
+the CachyOS configuration does not override them.
 
 Noctalia uses a single `~/.config/noctalia/config.toml`, linked to the exported
 configuration in this repository. The same configuration is used on desktop
