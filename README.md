@@ -24,7 +24,7 @@ bash install.sh
 
 The script initializes Dotbot when needed and links the Niri, Noctalia, Fish,
 Foot, Kitty and Starship configuration. It adds the Niri `custom.kdl` include,
-sets Foot as the default terminal, and validates Niri and Noctalia. It loads
+sets Kitty as the default terminal, and validates Niri and Noctalia. It loads
 the pfetch greeting and Starship at the end of Fish initialization so that
 the CachyOS configuration does not override them.
 
@@ -41,3 +41,10 @@ private account information, and replace `.config/noctalia/config.toml`.
 No splitting into multiple files is required.
 Log out and back in after the first installation so Noctalia inherits Niri's
 terminal environment.
+
+Kitty uses Fish and starts in the splits layout. `Ctrl+Shift+Enter` creates a
+panel automatically; `Ctrl+Shift+\` creates side-by-side panels and
+`Ctrl+Shift+-` creates panels above/below. New panels start in the current
+working directory. `Ctrl+Shift+Z` toggles a focused panel view (stack layout).
+`Mod+Return` opens Kitty. Log out and back in to update the terminal environment
+for Noctalia and other running applications.

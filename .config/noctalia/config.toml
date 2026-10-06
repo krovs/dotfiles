@@ -109,19 +109,7 @@ external_ip_enabled = true
 
     [shell.launcher]
     app_grid = true
-    pinned = [
-        "brave-browser",
-        "com.microsoft.VSCode",
-        "discord",
-        "foot",
-        "net.lutris.Lutris",
-        "steam",
-        "com.stremio.Stremio",
-        "org.telegram.desktop",
-        "com.spotify.Client",
-        "md.obsidian.Obsidian",
-        "org.localsend.localsend_app"
-    ]
+    pinned = ["brave-browser", "com.microsoft.VSCode", "discord", "kitty", "net.lutris.Lutris", "steam", "com.stremio.Stremio", "org.telegram.desktop", "com.spotify.Client", "md.obsidian.Obsidian", "org.localsend.localsend_app"]
 
     [shell.panel]
     clipboard_position = "top_right"

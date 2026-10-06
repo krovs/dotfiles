@@ -6,16 +6,16 @@ window-rule {
 	geometry-corner-radius 6
 }
 
-// Foot is translucent. Draw Niri's focus ring around it rather than behind it,
+// Foot and Kitty are translucent. Draw Niri's focus ring around it rather than behind it,
 // otherwise the active focus color tints the whole terminal background.
 window-rule {
-	match app-id=r#"^foot$"#
+	match app-id=r#"^(foot|kitty)$"#
 	draw-border-with-background false
 }
 
 binds {
 	Mod+F		hotkey-overlay-title="Maximize Column" { maximize-column; }
-	Mod+Return	hotkey-overlay-title="Open Terminal: Foot" { spawn "foot"; }
+	Mod+Return	hotkey-overlay-title="Open Terminal: Kitty" { spawn "kitty"; }
         Mod+Space       hotkey-overlay-title="Open App Launcher: Noctalia" { spawn "noctalia" "msg" "panel-toggle" "launcher"; }
 	Mod+B 		hotkey-overlay-title="Open Browser: Brave" { spawn "brave"; }
         // Merge the column to the right into the current column (Stacking)
@@ -31,7 +31,7 @@ binds {
         Mod+Shift+Right { consume-or-expel-window-right; }
 }
 environment {
-    TERMINAL "foot"
+    TERMINAL "kitty"
 }
 input {
     focus-follows-mouse max-scroll-amount="0%"
