@@ -93,6 +93,9 @@ widget_order = [ "lockscreen-login-box@HDMI-A-1" ]
 [notification]
 show_actions = false
 
+[osd]
+position = "top_right"
+
 [plugins]
 enabled = [ "dotnetrob/cat", "davemhammer/tailscale", "noctalia/bongocat" ]
 
