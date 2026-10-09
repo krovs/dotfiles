@@ -9,6 +9,8 @@ $directory\
 [](bg:yellow fg:peach)\
 $git_branch\
 $git_status\
+$aws\
+$kubernetes\
 [](fg:yellow bg:green)\
 $c\
 $rust\
@@ -83,6 +85,20 @@ format = '[[ $symbol $branch ](fg:crust bg:yellow)]($style)'
 [git_status]
 style = "bg:yellow"
 format = '[[($all_status$ahead_behind )](fg:crust bg:yellow)]($style)'
+
+[aws]
+style = "bg:yellow fg:crust"
+format = '[  ($profile)(@$region) ]($style)'
+force_display = true
+
+[kubernetes]
+disabled = false
+style = "bg:yellow fg:crust"
+format = '[ 󱃾 $context(::$namespace) ]($style)'
+detect_extensions = []
+detect_files = ['Chart.yaml', 'Chart.yml', 'kustomization.yaml', 'kustomization.yml', 'Kustomization', 'skaffold.yaml', 'skaffold.yml', 'helmfile.yaml', 'helmfile.yml', '.kubernetes']
+detect_folders = ['kubernetes', 'k8s', 'helm', 'charts']
+detect_env_vars = []
 
 [nodejs]
 symbol = ""
@@ -163,7 +179,7 @@ show_milliseconds = true
 format = " in $duration "
 style = "bg:lavender"
 disabled = false
-show_notifications = true
+show_notifications = false
 min_time_to_notify = 45000
 
 [palettes.catppuccin_mocha]

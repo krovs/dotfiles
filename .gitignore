@@ -1,0 +1,12 @@
+# Local credentials and machine-specific state.
+.aws/
+.kube/
+.env
+.env.*
+!.env.example
+.envrc.local
+.config/fish/fish_variables
+
+# Local agent configuration.
+.agents/
+.codex/

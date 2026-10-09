@@ -8,11 +8,14 @@
     - ~/.config/kitty
     - ~/.config/foot
     - ~/.config/noctalia
+    - ~/.config/fish/functions
 
 - link:
     ~/.config/kitty: .config/kitty
     ~/.config/foot/foot.ini: .config/foot/foot.ini
     ~/.config/fish/conf.d: .config/fish/conf.d
+    ~/.config/fish/fish_plugins: .config/fish/fish_plugins
+    ~/.config/fish/functions/asp.fish: .config/fish/functions/asp.fish
     ~/.config/niri/custom.kdl: .config/niri/custom.kdl
     ~/.config/noctalia/config.toml: .config/noctalia/config.toml
     ~/.config/starship.toml: .config/starship.toml

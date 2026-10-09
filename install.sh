@@ -11,7 +11,9 @@ DOTBOT_DIR="dotbot"
 DOTBOT_BIN="bin/dotbot"
 
 cd "$BASE_DIR"
+bash "$BASE_DIR/scripts/install-fish-tools.sh"
 git -C "$DOTBOT_DIR" submodule sync --quiet --recursive
 git submodule update --init --recursive "$DOTBOT_DIR"
 
 "$BASE_DIR/$DOTBOT_DIR/$DOTBOT_BIN" -d "$BASE_DIR" -c install.cachyos.conf.yaml
+fish "$BASE_DIR/scripts/install-fish-plugins.fish"
