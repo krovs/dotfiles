@@ -100,7 +100,7 @@ position = "top_right"
 enabled = [ "dotnetrob/cat", "davemhammer/tailscale", "noctalia/bongocat" ]
 
 [shell]
-avatar_path = "~/Downloads/avatars/ChatGPT Image Oct 2, 2026, 06_53_34 PM.png"
+avatar_path = "~/.face"
 external_ip_enabled = true
 
     [shell.keyboard_layout.custom_labels]
@@ -109,23 +109,38 @@ external_ip_enabled = true
 
     [shell.launcher]
     app_grid = true
-    pinned = ["brave-browser", "com.microsoft.VSCode", "discord", "kitty", "net.lutris.Lutris", "steam", "com.stremio.Stremio", "org.telegram.desktop", "com.spotify.Client", "md.obsidian.Obsidian", "org.localsend.localsend_app"]
+    pinned = [
+        "brave-browser",
+        "com.microsoft.VSCode",
+        "discord",
+        "kitty",
+        "net.lutris.Lutris",
+        "steam",
+        "com.stremio.Stremio",
+        "org.telegram.desktop",
+        "com.spotify.Client",
+        "md.obsidian.Obsidian",
+        "org.localsend.localsend_app"
+    ]
 
     [shell.panel]
     clipboard_position = "top_right"
     open_near_click_control_center = true
 
+    [shell.screenshot]
+    annotate = true
+
 [theme]
 builtin = "Catppuccin"
 
 [wallpaper.default]
-path = "~/Pictures/Wallpapers/alone.png"
+path = "/home/krovs/Pictures/Wallpapers/alone.png"
 
 [wallpaper.last]
-path = "~/Pictures/Wallpapers/alone.png"
+path = "/home/krovs/Pictures/Wallpapers/alone.png"
 
 [wallpaper.monitors.HDMI-A-1]
-path = "~/Pictures/Wallpapers/alone.png"
+path = "/home/krovs/Pictures/Wallpapers/alone.png"
 
 [widget.battery]
 capsule = true

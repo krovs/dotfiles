@@ -14,6 +14,8 @@ window-rule {
 }
 
 binds {
+    // Select a region in Noctalia, then open its annotation editor.
+    Ctrl+Shift+1 hotkey-overlay-title="Capture Region and Annotate" { spawn "noctalia" "msg" "screenshot-region"; }
 	Mod+F		hotkey-overlay-title="Maximize Column" { maximize-column; }
 	Mod+Return	hotkey-overlay-title="Open Terminal: Kitty" { spawn "kitty"; }
         Mod+Space       hotkey-overlay-title="Open App Launcher: Noctalia" { spawn "noctalia" "msg" "panel-toggle" "launcher"; }
